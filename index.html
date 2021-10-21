@@ -414,7 +414,19 @@
         </li>
       </ul>
     </div>
-  </div>  
+   <div class="footer__email_submit">
+     <p class="footer__email_text">Подпишитесь на рассылку</p>
+    <form class="footer__email_form" name="signup_form" autocomplete="off" novalidate>
+      <label class="footer__email_lable">
+         <input type="email" name="email" placeholder="E-mail" />
+      </label>
+        <button class="footer__btn_submit" type="submit">Подписаться
+          <svg class="footer__btn_icon">
+            <use href="./images/icons.svg#send"></use>
+          </svg>
+        </button>
+    </form>      
+  </div>
   </footer>
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -424,6 +436,7 @@
       </svg>
     </button>
   </div>
+</div>
 </div>
   <script src="./js/modal.js"></script>
 </body>
