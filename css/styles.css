@@ -699,9 +699,10 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* При использовании размеров 24*24 иконка меньше чем на макете */
 .footer__btn_icon{
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     padding-left: 10px;
 }
 
