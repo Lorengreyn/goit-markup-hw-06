@@ -381,7 +381,8 @@
     </ul>
     </address>
   </div>
-    <div class="footer__social">
+  </div>
+  <div class="footer__social">
       <p class="soc">присоединяйтесь</p>
       <ul class="social">
         <li class="footer__social_item">
@@ -427,15 +428,73 @@
         </button>
     </form>      
   </div>
-  </footer>
+</footer>
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="close" data-modal-close>
-      <svg class="close__icon">
+    <button type="button" class="modal__close" data-modal-close>
+      <svg class="modal__close_icon">
         <use href="./images/icons.svg#close"></use>
       </svg>
     </button>
+    <h2 class="modal__heading">Оставьте свои данные, мы вам перезвоним</h2>
+    <div class="modal__flex">
+    <form class="modal__form" name="re-call_form" autocomplete="off" novalidate>
+      <div class="modal__lable">
+        <label class="modal__lable_text">
+          Имя
+          <input class="modal__lable_input" type="text" name="name">
+          <svg class="modal__lable_icon man" width="18" height="18">
+            <use href="./images/icons.svg#man"></use>
+          </svg>
+        </label>
+        
+      </div>      
+      <div class="modal__lable">
+        <label class="modal__lable_text">
+          Телефон
+          <input class="modal__lable_input" type="tel" name="tel">
+          <svg class="modal__lable_icon phone" width="18" height="18">
+            <use href="./images/icons.svg#phone"></use>
+          </svg>
+        </label>
+      </div>      
+      <div class="modal__lable">
+        <label class="modal__lable_text">
+          Почта
+        <input class="modal__lable_input" type="email" name="email" />
+        <svg class="modal__lable_icon email" width="18" height="18">
+          <use href="./images/icons.svg#email"></use>
+        </svg>
+        </label>
+      </div>      
+      <div class="modal__lable">
+        <label class="modal__lable_text">
+          Комментарий
+          <textarea class="modal__textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+        </label>
+      </div>      
+      <div class="modal__checkbox_field">
+        <input type="checkbox" id="checkbox" name="accept" class="hidden modal__checkbox"/>
+        <label for="checkbox" class="modal__checkbox_input">    
+          
+              
+          Соглашаюсь с рассылкой и принимаю 
+          <a class="modal__link" href="#">Условия договора</a>
+          <span class="modal__checkbox_icon">
+            <svg class="modal__checkbox_svg" width="16" height="15">
+              <use href="./images/icons.svg#chek"></use>
+            </svg>
+          </span>  
+          
+        </label>
+      </div>
+      <div class="modal__btn_flex">      
+      <button type="submit" class="modal__btn">Отправить</button>
+    </div>
+
+    </form>
   </div>
+  
 </div>
 </div>
   <script src="./js/modal.js"></script>
