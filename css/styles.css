@@ -704,6 +704,7 @@ img {
     width: 32px;
     height: 32px;
     padding-left: 10px;
+    fill: var(--white);
 }
 
 .footer__btn_submit{
